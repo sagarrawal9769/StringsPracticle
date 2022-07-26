@@ -581,22 +581,60 @@ class Program
 
         //End of ToCharArray()-------------------------------------------------------------
 
-        // String ToLower() & ToUpper() & ToLowerInvariant()--------------------------------------------------------------------------
+        // String ToLower() & ToUpper() & ToLowerInvariant() & ToString() & ToUpperInvariant()--------------------------------------------------------------------------
 
         Console.WriteLine("----------------------------------------------------------------------------");
         Console.WriteLine();
-        Console.WriteLine(" " + "String ToLower & ToUpper & ToLowerInvariant()");
+        Console.WriteLine(" " + "String ToLower & ToUpper & ToLowerInvariant() & ToString() & ToUpperInvariant()");
         Console.WriteLine();
         string toLower = "JNFO";
+        int toString = 888;
+        float toString1 = 33.9f;
+        string toUpper = "hello info";
+        Console.WriteLine(" "+"ToLower");
         Console.WriteLine(toLower.ToLower());
+        Console.WriteLine();
+        Console.WriteLine(" " + "ToUpper");
         Console.WriteLine(toLower.ToUpper());
+        Console.WriteLine();
+        Console.WriteLine(" " + "ToLowerInvariant()");
         Console.WriteLine(toLower.ToLowerInvariant());
         Console.WriteLine();
+        Console.WriteLine(" " + "ToString");
+        Console.WriteLine(toString.ToString());
+        Console.WriteLine(toString1.ToString());
+        Console.WriteLine();
+        Console.WriteLine("ToUpperInvariant()");
+        Console.WriteLine(toUpper.ToUpperInvariant());
+        Console.WriteLine();
 
-        //End of ToLower() & ToUpper() & ToLowerInvariant()------------------------------------------------------------------
+        //End of ToLower() & ToUpper() & ToLowerInvariant() & ToString() & ToUpperInvariant()------------------------------------------------------------------
 
-       
-        
+        // String Trim() & TrimEnd() & TrimStart()--------------------------------------------------------------------------
+
+        Console.WriteLine("----------------------------------------------------------------------------");
+        Console.WriteLine();
+        Console.WriteLine(" " + "String Trim() & TrimEnd() & TrimStart()");
+        Console.WriteLine();
+        Console.WriteLine("Trim");
+        string trim = "     123abc456defghi789";
+        Console.WriteLine(trim.Trim());
+        char[] charToTrim = {' ','1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        Console.WriteLine(trim.Trim(charToTrim));
+        Console.WriteLine();
+        Console.WriteLine("TrimEnd");
+        string trimEnd = "Hello Mfs";
+        char[] charTrimEnd = { 's' };
+        Console.WriteLine(trimEnd.TrimEnd(charTrimEnd));
+        Console.WriteLine();
+        Console.WriteLine("TrimStart");
+        char[] charTrimStart = { 'H' };
+        Console.WriteLine(trimEnd.Trim(charTrimStart));
+        Console.WriteLine();
+
+        //End of Trim() & TrimEnd() & TrimStart()---------------------------------------------------------------------------------------
+
+
 
 
 
