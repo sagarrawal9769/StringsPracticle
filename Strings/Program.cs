@@ -587,9 +587,10 @@ class Program
         Console.WriteLine();
         Console.WriteLine(" " + "String ToLower & ToUpper & ToLowerInvariant()");
         Console.WriteLine();
-        Console.WriteLine(string1.ToLower());
-        Console.WriteLine(string1.ToUpper());
-        Console.WriteLine(string1.ToLowerInvariant());
+        string toLower = "JNFO";
+        Console.WriteLine(toLower.ToLower());
+        Console.WriteLine(toLower.ToUpper());
+        Console.WriteLine(toLower.ToLowerInvariant());
         Console.WriteLine();
 
         //End of ToLower() & ToUpper() & ToLowerInvariant()------------------------------------------------------------------
